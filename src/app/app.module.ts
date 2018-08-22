@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TotoComponent } from './toto/toto.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TotoComponent
   ],
   imports: [
     BrowserModule
