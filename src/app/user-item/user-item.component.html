@@ -3,11 +3,11 @@
 <!--</p>-->
 
 <input [value]="name">
-<button [disabled]="deactivated">Click Me !!!</button>
+<button [disabled]="deactivated" (click)="onClick($event)">Click Me !!!</button>
 <input type="checkbox" [value]="deactivated" (change)="deactivated = !deactivated">
 <p>Well done {{name}} ! You rock :) </p>
 
-<ul>
+<ul [hidden]="hideTweet">
   <li *ngFor="let tweet of tweets">
     {{tweet | json}}
   </li>

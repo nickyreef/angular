@@ -11,6 +11,7 @@ export class UserItemComponent {
   name: string;
   deactivated: boolean;
   tweets: any[];
+  hideTweet: boolean;
 
   constructor() {
     this.name = 'NSO';
@@ -20,6 +21,11 @@ export class UserItemComponent {
       {date: new Date('02/02/2018'), text: 'titi'},
       {date: new Date('03/03/2018'), text: 'tutu'}
     ];
+    this.hideTweet = true;
+  }
+
+  onClick(ev) {
+    this.hideTweet = false;
   }
 
   // onChange(ev) {
