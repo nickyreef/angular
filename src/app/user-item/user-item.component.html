@@ -1,0 +1,17 @@
+<!--<p>-->
+  <!--user-item works!-->
+<!--</p>-->
+
+<input [value]="name">
+<button [disabled]="deactivated">Click Me !!!</button>
+<input type="checkbox" [value]="deactivated" (change)="deactivated = !deactivated">
+<p>Well done {{name}} ! You rock :) </p>
+
+<ul>
+  <li *ngFor="let tweet of tweets">
+    {{tweet | json}}
+  </li>
+  <li *ngFor="let tweet of tweets">
+    {{tweet.date | date}} - {{tweet.text}}
+  </li>
+</ul>
