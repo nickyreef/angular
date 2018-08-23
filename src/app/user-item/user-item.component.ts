@@ -17,7 +17,7 @@ export class UserItemComponent {
     this.name = 'NSO';
     this.deactivated = true;
     this.tweets = [
-      {date: new Date('01/01/2018'), text: 'toto'},
+      {date: new Date('01/01/2018'), text: 'toto jknjkjkdfngjkfnsjkgnjkdfgjkj niogsdfnioqg dfgionerio'},
       {date: new Date('02/02/2018'), text: 'titi'},
       {date: new Date('03/03/2018'), text: 'tutu'}
     ];

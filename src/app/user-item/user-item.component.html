@@ -13,6 +13,6 @@
     {{tweet | json}}
   </li>
   <li *ngFor="let tweet of tweets">
-    {{tweet.date | date}} - {{tweet.text}}
+    {{tweet.date | date}} - <span appTruncate>{{tweet.text}}</span>
   </li>
 </ul>
