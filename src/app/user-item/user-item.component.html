@@ -2,10 +2,11 @@
   <!--user-item works!-->
 <!--</p>-->
 
-<input [value]="name">
-<button [disabled]="deactivated" (click)="onClick($event)">Click Me !!!</button>
-<input type="checkbox" [value]="deactivated" (change)="deactivated = !deactivated">
 <p>Well done {{name}} ! You rock :) </p>
+
+<input [value]="name"><br>
+<label><input type="checkbox" [value]="deactivated" (change)="deactivated = !deactivated"> Activate button ?</label><br>
+<button [disabled]="deactivated" (click)="onClick($event)">Click Me !!!</button>
 
 <ul [hidden]="hideTweet">
   <li *ngFor="let tweet of tweets">
